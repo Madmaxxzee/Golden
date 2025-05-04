@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       msg.style.color = "#555";
 
       try {
-        const response = await fetch("/submit-lead", {
+        const response = await fetch("https://www.sprecrm.com/submit-lead", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const res = await fetch("/submit-lead", {
+      const res = await fetch("https://www.sprecrm.com/submit-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
